@@ -1,0 +1,222 @@
+
+
+
+
+/* LOOK UP TUTORIAL FORM FORMATTING. DON'T COME UP WITH STYLE ON YOUR OWN CUZ YOU SUCK AT IT. */
+
+
+
+
+
+body {
+    font-family: monaco;
+  }
+
+nav {
+    position: fixed;
+    background-color: rgb(123, 169, 255);
+    top: 0;
+    margin-left: -8px;
+    margin-bottom: 40px;
+    
+    padding: 13px 0 13px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: rgb(54, 0, 54);
+    text-decoration: none;
+    padding: 14px 10px;
+}
+
+nav a:hover {
+    background: #f2f2f2;
+    color: black;
+}
+
+#nav-logo {
+    flex-basis: 50%;
+    margin-right: -30px;
+}
+
+h4 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+section {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+#video-related {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#video-text {
+    flex-basis: 560px;
+    text-align: justify;
+    margin-top: -3px;
+    font-size: 18px;
+}
+
+#video {
+    margin-bottom: 30px;
+}
+
+.guava-content p {
+    --padding-size: 50px;
+    padding: 0 var(--padding-size) 30px var(--padding-size);
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#header-img{
+    width: 100px;
+    height: auto;
+}
+
+#heading {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#email-section {
+    flex-basis: 100%;
+}
+
+#our-story {
+    margin-top: 0;
+    background-color: hsl(60, 100%, 84%);
+    flex-basis: 100%;
+}
+
+#about-us {
+    background-color: lightpink;
+    flex-basis: 49%;
+}
+
+#why-we-do-it {
+    background-color: lightgreen;
+    flex-basis: 49%;
+}
+
+#contact-us {
+    text-align: center;
+    padding: 20px 20px 80px 20px;
+    border-style: solid;
+    background-color: lightblue;
+}
+
+#contact-explanation {
+    /* width: 480px; */
+    margin: auto; 
+    text-align: justify;
+    padding-top: 27px;
+    /* By assigning auto to the left and right margins of an element, they take up the available horizontal space in the element's container equally – and thus the element gets centered. */
+}
+
+form {
+    /* background-color: red; */
+    margin: auto;
+    max-width: 480px;
+}
+
+textarea {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 98%; /* adding padding makes box increase to the right*/
+    padding: 0;
+    padding: 5px;
+    border: none;
+    border-width: 2px;
+    box-shadow: none;
+    box-shadow: 5px 4px rgba(0, 0, 0, 0.151);
+    font-family: 'Courier New', Courier, monospace;;
+}
+
+#contact-us div {
+    display: flex;
+    height: 25px;
+}
+
+input[type="email"] {
+    flex-basis: 100%;
+    box-shadow: none;
+    /* border-top: none;
+    border-top: 1px solid grey; */
+    border: none;
+    border-bottom-left-radius: 10px;
+    font-size: 15px;
+    font-family: Courier, monospace;
+}
+
+#submit {
+    /* border-top: none;
+    border-top: 1px solid rgb(240, 255, 174); */
+    border: none;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(147, 151, 214);
+    font-family: 'Monaco', Courier, monospace;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 720px) {
+
+    #video-text {
+        text-align: left;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    #contact-explanation {
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 865px) {
+
+    #nav-logo {
+        display: none;
+    }
+
+    #nav-bar {
+        padding-left: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .guava-content p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
