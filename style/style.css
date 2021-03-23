@@ -1,5 +1,5 @@
 body {
-    font-family: monaco;
+    font-family: 'Roboto', sans-serif;
     /* background-color: rgb(244, 244, 244); */
   }
 
@@ -20,7 +20,8 @@ nav a {
     color: rgb(54, 0, 54);
     text-decoration: none;
     padding: 14px 10px 13px 10px;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 nav a:hover {
@@ -40,8 +41,7 @@ h4 {
     position: relative;
     top: 2px;
     text-align: center;
-    font-family: Courier, monospace;
-    font-weight: normal;
+    font-weight: bold;
     color: rgb(0, 0, 0);
 }
 
@@ -58,6 +58,7 @@ h2 {
 }
 
 h1 {
+    font-family: monaco;
     font-size: 44px;
 }
 
@@ -147,13 +148,12 @@ form {
 textarea {
     margin-top: 20px;
     margin-bottom: 10px;
-    width: 98%; /* adding padding makes box increase to the right*/
-    padding: 0;
-    padding: 5px;
+    width: 96%; /* adding padding makes box increase to the right*/
+    padding: 10px;
     border: none;
     border-width: 2px;
     box-shadow: none;
-    box-shadow: 5px 4px rgba(0, 0, 0, 0.151);
+    box-shadow: 3.5px 3.5px rgba(0, 0, 0, 0.098);
     font-family: 'Courier New', Courier, monospace;;
 }
 
@@ -169,6 +169,7 @@ input[type="email"] {
     border-bottom-left-radius: 10px;
     font-size: 15px;
     font-family: Courier, monospace;
+    padding-left: 10px;
 }
 
 #submit {
@@ -210,11 +211,19 @@ input[type="email"] {
     #contact-explanation {
         width: auto;
     }
+
+    textarea {
+        width: 94%;
+    }
 }
 
 @media only screen and (max-width: 550px) {
+
     nav a {
-        padding: 17px 5px 13px 5px;
-        font-size: 2.8vw;
+        padding: 17px 10px 13px 10px;
+
+        margin-right: 0px;
+        margin-left: 0px;
     }
+
 }
