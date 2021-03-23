@@ -219,17 +219,11 @@ input[type="email"] {
     }
 }
 
-@media only screen and (max-width: 550px) {
-
-    .nav-element {
-        margin-right: 0px;
-    }
-
+@media only screen and (max-width: 510px) {
     nav a {
-        padding: 17px 8px 13px 8px;
+        padding: 18px 8px 14px 8px;
         margin-right: 0px;
         margin-left: 0px;
-        font-size: 3.8vw;
+        font-size: min(3.8vw, 16px);
     }
-
 }
