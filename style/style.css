@@ -221,11 +221,15 @@ input[type="email"] {
 
 @media only screen and (max-width: 550px) {
 
+    .nav-element {
+        margin-right: 0px;
+    }
+
     nav a {
         padding: 17px 8px 13px 8px;
         margin-right: 0px;
         margin-left: 0px;
-        font-size: 15.5px;
+        font-size: 3.8vw;
     }
 
 }
